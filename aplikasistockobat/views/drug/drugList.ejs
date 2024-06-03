@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List Drug</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="/stylesheets/colors.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/search.css" rel="stylesheet" type="text/css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">LIST DRUGS</h1>
+        <br>
+        <br>
+        <button onclick="window.location.href='/drugmanage'" class="btn btn-primary">Full Access</button>
+        <div id="searchContainer" class="mb-3">
+            <input type="text" id="searchInput" class="form-control" placeholder="Search Drug" onkeyup="searchDrug()">
+            <img id="searchIcon" src="/images/Search.png" alt="Search Icon" width="20" height="20">
+        </div>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="bg-success">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Preparation</th>
+                        <th>Stock</th>
+                        <th>Pharmacology</th>
+                        <th>Price</th>
+                        <th>Manufacture</th>
+                    </tr>
+                </thead>
+                <tbody id="drugTableBody">  
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="Fetch_drugs_list.js"></script>
+</body>
+</html>

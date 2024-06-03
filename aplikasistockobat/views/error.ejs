@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+        <% if (error.status === 404) { %>
+            <%- include('error/error404') %>
+        <% } else if (error.status === 500) { %>
+            <%- include('error/error500') %>
+            <% } else { %>
+                <h1 class="error-title">Error <%= error.status || 'Unknown' %></h1>
+                <p class="error-message">An unexpected error occurred.</p>
+            <% } %>            
+</body>
+</html>
+

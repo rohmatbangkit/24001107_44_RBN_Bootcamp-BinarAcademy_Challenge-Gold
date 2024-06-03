@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Error 500: Internal Server Error</title>
+    <!-- Load Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Load Montserrat font -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load custom CSS -->
+    <link href="/stylesheets/error.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Background Animation -->
+    <div class="bg-animation"></div>
+    
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="error-container">
+                    <h1 class="error-title">Error 500: Internal Server Error</h1>
+                    <p class="error-message">Sorry, something went wrong on our end.</p>
+                    <p class="error-message">We're working to fix this issue. Please try again later.</p>
+                    <p class="error-explanation">The server encountered an internal error or misconfiguration and was unable to complete your request.</p>
+                    <p><div class="d-flex justify-content-center"><b>User Agent :</b></div><span id="user-agent-info"></span></p>
+                    <p><span id="current-date-info"></span> | <span id="current-time-info"></span></p>
+                    <a href="/" class="btn btn-primary btn-back">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->s
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- User Agent JavaScript -->
+    <script src="javascripts/user_agent.js"></script>
+    <!-- Date JavaScript -->
+    <script src="javascripts/date.js"></script>
+     <!-- Clock JavaScript -->
+     <script src="javascripts/time.js"></script>
+
+</body>
+</html>
