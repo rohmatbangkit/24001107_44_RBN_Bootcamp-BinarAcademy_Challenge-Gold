@@ -8,9 +8,10 @@ Font Awesome
 REST API
 FETCH API
 
-Feature
+Feature  : 
+
 primary
-- View Table & Search  http:127.0.0.1/3000/
+- View Table & Search  http://127.0.0.1/3000
 
 - Aad drug , edit data , delete data , view & search data http://127.0.0.1:3000/drugmanage
 
